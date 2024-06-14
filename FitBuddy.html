@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Главная страница итогового приложения</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    section {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        background: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+        background: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        main {
+            flex-direction: column;
+        }
+
+        section {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        section {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 768px) and (orientation: landscape) {
+        section {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>FitBuddy</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Описание функционала</h2>
+        <p>1. Тренировки и упражнения: Пользователи могут выбирать из разнообразных тренировок, создавать собственные программы, следить за своими достижениями и записывать результаты упражнений.
+2. Питание: Планирование и отслеживание рациона питания, составление списка покупок, рецепты здоровых блюд.
+3. Мотивация: Система наград и достижений, ежедневные напоминания и поощрения, возможность установить цели и отслеживать прогресс.
+4. Сообщество: Возможность общаться с другими участниками, обмениваться советами, участвовать в челленджах и соревнованиях.
+.</p>
+    </section>
+    <section>
+        <h2>О приложении</h2>
+        <p>Дополнительные функции могут включать в себя интеграцию с фитнес-трекерами, возможность консультироваться с тренерами онлайн, подборка персональных рекомендаций и т.д..</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2021 Ваше приложение. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
